@@ -10,15 +10,43 @@ body {
 Add some style blocks below this line to style the cards.
 Feel free to borrow from Exercise 1.
 */
+h2, p, button {
+    margin: 5%;
+}
+
+section {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(174, 182, 182);
+    width: 20vw;
+    margin-left: 1vw;
+    margin-top: 2vw;
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
 /* Tablet Media Query */
 @media only screen and (max-width: 1000px) {
+    main {
+        flex-wrap: wrap;
+    }
 
+    section {
+        width: calc(50% - 20px);
+    }
 }
 
 /* Mobile Phone Media Query */
 @media only screen and (max-width: 600px) {
-
-    
+    section {
+        width: 100%;
+    }
 }
